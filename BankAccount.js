@@ -1,17 +1,13 @@
 class BankAccount {
 
-  constructor(name){
+  constructor(name, balance){
     balance = 1000
     name = name
   }
 
-  deposit(){
+  deposit(amount){
     return this.balance
   }
-
-   isValid(){
-     return this.balance > 0
-   }
 
    setBalance(newBalance){
      this.balance = newBalance

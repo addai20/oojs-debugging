@@ -8,12 +8,8 @@ class Transfer
     @amount = amount
   end
 
-  def valid?
-    sender.valid? && amount >= 0
-  end
-
   def execute_transaction
-    if valid? && sender.balance > amount && self.status == "pending"
+    if sender.balance > amount && self.status == "pending"
       sender.balance -= amount
       receiver.balance += amount
       self.status = "complete"
@@ -38,9 +34,5 @@ class BankAccount
 
   def deposit(deposit_amount)
     self.balance += deposit_amount
-  end
-
-  def valid?
-    balance > 0
   end
 end
