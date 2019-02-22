@@ -7,15 +7,17 @@ class Transfer {
   }
 
   executeTransaction(){
-    let senderBalanceAfterTransfer = sender.getBalance() - amount
-    if(status == "pending" && senderBalanceAfterTransfer > 0){
+    let sendersBalanceAfterTransfer = sender.getBalance() - amount
+    let message
+    if(status == "pending" && sendersBalanceAfterTransfer > 0){
       sender.setBalance(sender.getBalance() - amount)
       receiver.setBalance(receiver.getBalance() + amount)
+      message = "Transaction completed"
       status = "complete"
-      return "Transaction completed"
     }else{
-      return rejectTransfer()
+      message = rejectTransfer()
     }
+    return message
   }
 
   rejectTransfer(){
