@@ -13,4 +13,4 @@ We have successful created a CLI-like banking application in Ruby. Open `bank.rb
 * (4) We then deposit $50 into her account. Her new balance is $150.
 
 
-We tried to implement the same application in JavaScript, but something are wrong. Can you fix them? Open index.html in the browser and try it for yourself. Code your solution in bank.js
+We tried to implement the same application in JavaScript, but something are wrong. Can you fix them? Open index.html in the browser and try it for yourself. Code your solution in index.js
