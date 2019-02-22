@@ -4,7 +4,7 @@
 //1. We should be able to create two bank accounts for Ann and Jake
 let ann = new BankAccount("Ann")
 console.log(ann)
-let jake = new BankAccount("jake")
+let jake = new BankAccount("Jake")
 console.log(jake)
 
 //2.1 We should be able to creata a first transfer where Ann transfer $900 to Jake
