@@ -1,5 +1,5 @@
 
-//---------------Don't edit this file. Try only to edit bank.js and transfer.js-------------------//
+//--------Don't edit this file. Try only to edit bank.js and transfer.js. Remember to use your debugger tools!--------//
 
 //1. We should be able to create two bank accounts for Ann and Jake
 let ann = new BankAccount("Ann")
